@@ -1,15 +1,15 @@
 # List of URLs and names for 10 different Linux distributions
 $distributions = @{
-  "Ubuntu 20.04" = "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04-desktop-amd64.iso";
-  "Arch Linux 2021.06.01" = "https://mirror.downloadvn.com/archlinux/iso/2021.06.01/archlinux-2021.06.01-x86_64.iso";
-  "Fedora 34" = "https://download.fedoraproject.org/pub/fedora/linux/releases/34/Workstation/x86_64/iso/Fedora-Workstation-34-1.21.iso";
-  "Kali Linux 2022.3" = "https://cdimage.kali.org/kali-2022.3/kali-linux-2022.3-live-amd64.iso";
-  "Deepin 2021" = "https://cdimage.deepin.com/releases/2021/03/25/2021_03_25_deepin_2021_technical_Preview_AMD64.iso";
-  "Ubuntu Focal" = "https://cdimage.ubuntu.com/focal/daily-live/20210211/focal-desktop-amd64.iso";
-  "Slackware Current" = "https://downloads.slackware.com/slackware/slackware64-current/slackware64-current-iso/slackware64-current-install.iso";
-  "CentOS 8.3.2011" = "https://people.centos.org/centos/8/isos/x86_64/CentOS-8.3.2011-x86_64-boot.iso";
-  "openSUSE Leap 15.2" = "https://downloads.opensuse.org/distribution/leap/15.2/iso/openSUSE-Leap-15.2-NET-x86_64.iso";
-  "Manjaro Xfce 21.0" = "https://ftp.fau.de/manjaro/releases/21.0/xfce/manjaro-xfce-21.0-stable-x86_64.iso"
+    "Debian" = "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.9.0-amd64-netinst.iso";
+    "Ubuntu" = "http://releases.ubuntu.com/20.04/ubuntu-20.04.2-desktop-amd64.iso";
+    "Fedora" = "https://dl.fedoraproject.org/pub/fedora/linux/releases/32/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-32-1.9.iso";
+    "OpenSUSE" = "https://download.opensuse.org/distribution/leap/15.2/iso/openSUSE-Leap-15.2-NET-x86_64.iso";
+    "CentOS" = "http://isoredirect.centos.org/centos/8/isos/x86_64/CentOS-8.3.2011-x86_64-boot.iso";
+    "Manjaro" = "https://manjaro.org/downloads/official/xfce/202211/manjaro-xfce-202211-stable-x86_64.iso";
+    "Kali" = "https://cdimage.kali.org/2022.2/kali-linux-2022.2-installer-amd64.iso";
+    "Arch" = "https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/2022.01.01/archlinux-2022.01.01-x86_64.iso";
+    "Elementary" = "https://mirror.pnl.gov/releases/elementary/os/5.2/elementaryos-5.2-stable.20221130.iso";
+    "Parrotsec" = "https://downloads.parrotsec.org/iso/parrot-security-6.0.0.iso";
 }
 
 # Display the list of distributions
@@ -49,7 +49,7 @@ exit
 }
 
 # Set the path to the USB drive
-$drivePath = "$driveLetter:"
+$drivePath = "$driveLetter`:`\"
 
 # Image the ISO file to the USB drive
 Write-Host "Imaging $filename to $drivePath. This may take several minutes."
